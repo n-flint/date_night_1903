@@ -1,3 +1,4 @@
+require './lib/node'
 class BinarySearchTree
   attr_reader :root
 
@@ -6,8 +7,10 @@ class BinarySearchTree
   end
   
   def insert(score, title)
-    node = Node.new
-    require 'pry'; binding.pry
+    if @root == nil
+        @root = Node.new(score, title)
+    else
+    end
   end
 
 end
